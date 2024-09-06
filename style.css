@@ -107,13 +107,13 @@ button {
 }
 
 /* RESPONSIVENESS DESIGN */
-@media screen and (min-width:513px) {
+@media screen and (min-width:426px) {
   button:hover {
     background-color: hsl(158, 36%, 27%);
   }
 }
 
-@media screen and (max-width:512px) {
+@media screen and (max-width:425px) {
   body {
     display: block;
     height: 100%;
@@ -133,7 +133,7 @@ button {
   }
   .col1 img {
     border-radius: 10px 10px 0 0;
-    max-height: 320px;
+    max-height: 350px;
   }
 
   /* SECTION COL2 MOBILE DESIGN */
@@ -143,5 +143,21 @@ button {
 
   .active {
     background-color: hsl(158, 36%, 27%);
+  }
+}
+
+@media screen and (max-width:375px) {
+  .col1 img {
+    border-radius: 10px 10px 0 0;
+    max-height: 262px;
+  }
+  .col2 {
+    padding: 20px;
+  }
+  .col2 .perfume-name {
+    margin: 10px 0;
+  }
+  .col2 p {
+    margin-bottom: 0;
   }
 }
