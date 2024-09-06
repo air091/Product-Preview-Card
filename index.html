@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/Product_preview_card_component/style.css">
+  <link rel="icon" href="/Product_preview_card_component/assets/favicon-32x32.png">
+  <title>Product Preview Card</title>
+</head>
+<body>
+  <main>
+    <section class="col1">
+      <img src="/Product_preview_card_component/assets/image-product-desktop.jpg" alt="perfume">
+    </section>
+    <section class="col2">
+      <span class="about">PERFUME</span>
+      <h1 class="perfume-name">Gabrielle Essence Eau De Parfum</h1>
+      <p>A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.</p>
+      <div class="price-container">
+        <h1 class="price">$149.99</h1>
+        <span class="discount">$179.99</span>
+      </div>
+      <button id="addToCart">
+        <img src="/Product_preview_card_component/assets/icon-cart.svg" alt="cart">
+        Add to Cart
+      </button>
+    </section>
+  </main>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const addToCart = document.getElementById('addToCart');
+
+      addToCart.addEventListener('touchstart', () => {
+        addToCart.classList.toggle('active');
+      });
+      addToCart.addEventListener('touchend', () => {
+        addToCart.classList.toggle('active');
+      });
+
+    });
+  </script>
+</body>
+</html>
